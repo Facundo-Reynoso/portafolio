@@ -25,11 +25,6 @@ const Header = () => {
           </Nav>
         </Container>
       </Navbar>
-      <br />
-      <h1>{Titulo}</h1>
-      <br />
-      <br />
-      <hr />
     </div>
   );
 };
