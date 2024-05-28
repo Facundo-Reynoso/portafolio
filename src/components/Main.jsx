@@ -14,6 +14,7 @@ import Logoreact from "../assets/react.png";
 import Csharp from "../assets/csharp.png";
 import Sql from "../assets/sql.png";
 import { Descripcion } from "../constants/constants";
+import { Typewriter } from "react-simple-typewriter";
 
 const Main = () => {
   const Alumno = {
@@ -26,7 +27,6 @@ const Main = () => {
     estadoCivil: "Soltero",
     trabajo: "Coach de Calistenia",
   };
-
   return (
     <div className="cuerpo">
       <br />
@@ -59,10 +59,17 @@ const Main = () => {
             <Image className="fotoPerfil" src={FotoPerfil} roundedCircle />
           </Col>
           <Col>
-            <Card style={{ width: "18rem" }}>
+            <Card className="App" style={{ width: "18rem", height: "16rem" }}>
               <Card.Body>
-                <Card.Title></Card.Title>
-                <Card.Text>{Descripcion}</Card.Text>
+                <Card.Text>
+                  <Typewriter
+                    words={[Descripcion]}
+                    loop={3}
+                    typeSpeed={35}
+                    deleteSpeed={5}
+                    delaySpeed={1000}
+                  />
+                </Card.Text>
               </Card.Body>
             </Card>
           </Col>
