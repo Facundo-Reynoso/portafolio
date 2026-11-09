@@ -37,6 +37,7 @@ const Main = () => {
       <br />
       <Container>
         <Row>
+          <Col></Col>
           <Col>
             <Card style={{ width: "18rem" }}>
               <Card.Body>

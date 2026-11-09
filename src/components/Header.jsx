@@ -1,20 +1,29 @@
+
 import React from "react";
-import { Titulo } from "../constants/constants";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 
 const Header = () => {
   return (
-    <div>
-      <Navbar bg="dark" data-bs-theme="dark">
-        <Container>
-          <Navbar.Brand href="#home" className="text-light">
-            {"<>"} Portafolio {"</>"}
-          </Navbar.Brand>
-        </Container>
-      </Navbar>
-    </div>
+    <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
+      <Container>
+        <Navbar.Brand href="#home">
+          {"<FR />"}
+        </Navbar.Brand>
+
+        <Navbar.Toggle aria-controls="main-navbar" />
+
+        <Navbar.Collapse id="main-navbar">
+          <Nav className="ms-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#skills">Skills</Nav.Link>
+            <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#contact">Contact</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 };
 

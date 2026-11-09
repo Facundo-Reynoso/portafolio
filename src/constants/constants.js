@@ -1,4 +1,4 @@
-export const Titulo = "Bienvenidos a Programación 3";
+export const Titulo = "Welcome to my portfolio";
 
 export const Descripcion =
-  "Estoy buscando mi primera experiencia laboral en el mundo de la programación, soy una persona curiosa, atenta, que tiene muchas ganas de aprender y desarrollarse en este ambito. Me gusta trabajar en equipo, conocer personas que sepan de código, y aprender de ellas.";
+  "I'm a programming student at UTN passionate about web development. I'm constantly learning, building personal projects, and improving my skills to grow as a developer.";

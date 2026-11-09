@@ -1,16 +1,20 @@
+
 import React from "react";
 import Header from "../components/Header";
-import Main from "../components/Main";
+import Hero from "../components/Hero";
+import Skills from "../components/Skills";
 import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className="text-center">
+    <div>
       <Header />
-      <Main />
+      <Hero />
+      <Skills />
       <Footer />
     </div>
   );
 };
 
 export default Home;
+
