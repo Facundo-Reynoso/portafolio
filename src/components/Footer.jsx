@@ -1,39 +1,46 @@
 import React from "react";
-import { FaFacebook } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 import "../css/Footer.css";
 
 const Footer = () => {
   return (
-    <div className="footer bg-dark" data-bs-theme="dark">
-      <h4 className="text-light titulo">Redes Sociales:</h4>
-      <div className="iconos">
-        <a href="https://x.com/FacundoReynos11" target="_blank">
-          <FaXTwitter className="icon" />
-        </a>
-        <a href="https://www.instagram.com/facureynos/" target="_blank">
-          <FaInstagram className="icon" />
-        </a>
+    <footer className="footer">
+      <h4>Let's connect</h4>
+
+      <div className="footer-links">
         <a
-          href="https://www.facebook.com/facureynoso0?locale=es_LA"
+          href="https://github.com/Facundo-Reynoso"
           target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
         >
-          <FaFacebook className="icon" />
+          <FaGithub className="footer-icon" />
+          <span>GitHub</span>
         </a>
+
         <a
-          href="https://www.linkedin.com/in/lucas-facundo-reynoso-864889257/"
+          href="https://www.linkedin.com/in/facu-reynoso-5711943b3/"
           target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
         >
-          <FaLinkedin className="icon" />
+          <FaLinkedin className="footer-icon" />
+          <span>LinkedIn</span>
+        </a>
+
+        <a
+          href="mailto:reynosofacundo1998@gmail.com"
+          aria-label="Email"
+        >
+          <FaEnvelope className="footer-icon" />
+          <span>Email</span>
         </a>
       </div>
-      <br />
-      <h5 className="text-light">
-        Copyright © Derechos reservados UTN FRT 2024
-      </h5>
-    </div>
+
+      <div className="footer-bottom">
+        <p>© 2026 · Portfolio</p>
+      </div>
+    </footer>
   );
 };
 
